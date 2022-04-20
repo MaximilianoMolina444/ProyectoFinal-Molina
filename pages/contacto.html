@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/Styles.css">
+    <!-- link de la fuente -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lobster&family=Oxygen:wght@400;700&family=Roboto:ital,wght@1,500&display=swap" rel="stylesheet">
+    <!-- link del CSS -->
+    <title>Diseños - Ramona</title>
+</head>
+<body>
+    <header class="contenedorLogo">
+        <a href="../index.html"><img src="../img/logo-modified.png" alt="" class="logoRamona"></a>
+        <nav>
+            <ul>
+                <li>
+                    <a href="diseños.html">Diseños</a>
+                </li>
+                <li>
+                    <a href="clientes.html">Clientes</a>
+                </li>
+                <li>
+                    <a href="somos.html">Somos</a>
+                </li>
+                <li>
+                    <a href="contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+	</header>
+    <div class="tituloDiseños">
+        <img src="../img/logo-modified.png" alt=" LogoRamona">
+        <p class="contactoFrase">
+            ¡Escribinos!
+        </p>
+    </div>
+    <main class="estructuraContacto">
+        <section class="contenedorImagenMain">
+            <form action="">           
+                <div>
+                    <label for="nombre">
+                        Nombre y apellido
+                    </label>
+                    <div>
+                     <input type="text" name="nombre" class="contenedorContacto">   
+                    </div>    
+                </div>
+                <div>
+                    <label for="email">
+                        Email
+                    </label>
+                    <div>
+                     <input type="email" name="email" class="contenedorContacto">   
+                    </div>   
+                </div>
+                <div>
+                    <label for="telefono">
+                        Teléfono
+                    </label>
+                    <div>
+                     <input type="number" name="telefono" class="contenedorContacto">   
+                    </div>  
+                </div>
+                <div>
+                    <label for="redes">
+                        ¿Cómo nos conociste?
+                    </label> 
+                    <div>
+                      <select name="redes" id="" class="contenedorContacto">
+                        <option value="Instagram">Instagram</option>
+                        <option value="Facebook">Facebook</option>
+                        <option value="Twitter">Twitter</option>
+                        <option value="Boca en boca">TikTok</option>
+                        <option value="Boca en boca">Por un amig@</option>
+                    </select>  
+                    </div>
+                    
+                </div>
+                <div>
+                    <label for="newsletter">
+                        ¿Te gustaría enterarte de nuestras novedades?
+                     </label>
+                     <div>
+                     <input type="radio" name="newsletter" class="contenedorContacto"> Me gustaría
+                    <input type="radio" name="newsletter" clas="contenedorContacto"> No gracias    
+                     </div>
+                    
+                </div>
+                <div>
+                    <label for="consulta">
+                            Tu consulta
+                    </label><br>
+                    <textarea name="consulta" id="" cols="30" rows="10" placeholder="Escribinos tu consulta"></textarea>
+                </div>     
+                <div class="contenedorBotones">
+                    <input type="submit" class="btn"> 
+                    <input type="reset" value="Reset" class="btn">   
+                </div>      
+                          
+            </form>
+        </section>
+        <footer>
+            <p>todos los derechos reservados</p>
+        </footer>
+    </main>
+</body>
+</html>     

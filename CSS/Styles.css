@@ -1,0 +1,350 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: grey;
+}
+/* logo principal */
+header{
+    text-align: center;
+    background-color: #7B1FA2;
+}
+.logoRamona{
+    width: 7rem;
+}
+
+.titulos{
+    font-family: 'Bebas Neue', cursive;
+}
+/* barra de navegacion */
+nav ul{
+    background-color:#7B1FA2;
+    display: flex;
+    justify-content: center;
+}
+/* botones de barra */
+nav ul li{
+    margin: 0.4rem;
+    background-color: whitesmoke;
+    padding: 0.3rem;
+    border-radius: 0.5rem;
+    border: solid 0.2rem;
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+    font-family: 'Bebas Neue', cursive;
+}
+/* estructura principal */
+.estructuraIndex{
+    height: 80vh;
+    display: grid;
+    grid-template-areas:"titulo"
+                        "main"
+                        "subT"
+                        "subT2"
+                        "imagen1"
+                        "imagen2"
+                        "imagen3"
+                        "imagen4"
+                        "redes"
+                        "footer";
+                        justify-content: center;
+}
+.estructuraDiseños{
+    height: 80vh;
+    display: grid;
+    grid-template-areas:"titulo"
+                        "imagen1"
+                        "imagen2"
+                        "imagen3"
+                        "imagen4"
+                        "redes"
+                        "footer";
+                        justify-content: center;
+}
+.estructuraClientes{
+    height: 80vh;
+    display: grid;
+    grid-template-areas:"imagen1"
+                        "imagen2"
+                        "redes"
+                        "footer";
+                        justify-content: center;
+}
+.estructuraSomos{
+    height: 80vh;
+    display: grid;
+    grid-template-areas:"titulo"
+                        "main"
+                        "subT"
+                        "subT2"
+                        "imagen1"
+                        "imagen2"
+                        "imagen3"
+                        "imagen4"
+                        "redes"
+                        "footer";
+                        justify-content: center;
+}
+.estructuraContacto{
+    height: 80vh;
+    display: grid;
+    grid-template-areas:"main"
+                        "footer";
+                        justify-content: center;
+}
+.tituloDiseños{
+    grid-area: titulo;
+    text-align: center;
+}
+.subTituloDiseños{
+    grid-area: subT;
+    text-align: center;  
+}
+.subTituloDiseños2{
+    grid-area: subT2;
+    text-align: center;
+}
+.indexFrase{
+    background-color: #212121;
+    color: #FFFFFF;
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.4rem;
+    border-radius: 1rem 3rem;
+}
+.contenedorImagenMain{
+    text-align: center;
+    grid-area: main;
+}
+.contenedorImagen1{
+    margin: 0.2rem;
+    text-align: center;
+    grid-area: imagen1;
+}
+.contenedorImagen2{
+    margin: 0.2rem;
+    text-align: center;
+    grid-area: imagen2;
+}
+.contenedorImagen3{
+    margin: 0.2rem;
+    text-align: center;
+    grid-area: imagen3;
+}
+.contenedorImagen4{
+    margin: 0.2rem;
+    text-align: center;
+    grid-area: imagen4;
+}
+.redes{
+    border: 0.3rem solid;
+    border-radius: 2rem;
+    background-color: purple;
+    text-align: center;
+    grid-area: redes;
+}
+.redesLogos{
+    display: inline-block;
+    width: 2.5rem;
+}
+footer{
+    grid-area: footer;
+}
+footer p{
+    text-align: center;
+}
+/* imagenes Index */
+.imagenMain{
+    width: 25rem;
+    border-radius: 2rem;
+    border: solid 0.2rem;
+    margin-bottom: 1rem;
+}
+.imagenContenedor{
+    border-radius: 2rem;
+    width: 20rem;
+    height: 15rem;
+    padding: 0.1rem;
+    border: solid 0.2rem;
+}
+.oculto{
+    display: none;
+}
+/* telefono contacto */
+.contactoLogo{
+    width: 100px;
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+}
+/* seccion clientes */
+.imagenClientes{
+    width: 15rem;
+    height:18rem;
+    margin: 0.3rem;
+    border-radius: 1rem 3rem;
+    border: solid 0.2rem;
+}
+/* formulario */
+.contactoFrase{
+    font-size: 2rem;
+    font-family: 'Bebas Neue', cursive;
+}
+form{
+    width: 19rem;
+    margin: 0 auto;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: 0.3rem solid black;
+}
+.contenedorContacto{
+    padding: 0.2rem;
+    margin: 0.2rem
+}
+.contenedorBotones{
+    display: flex;
+    justify-content: center;
+}
+.btn{
+    color: white;
+    padding: 0.2rem;
+    background-color: #5B2C6F;
+    border: 0.2rem solid black;
+    border-radius: 0.4rem;
+    margin: 0.5rem;
+}
+/* media queries */
+@media only screen and (min-width:600px){
+    .estructuraIndex{
+        height: 80vh;
+        display: grid;
+        grid-template-areas: "titulo titulo"
+                            "main main"
+                            "subT subT"
+                            "subT2 subT2"
+                            "imagen1 imagen2"
+                            "imagen3 imagen4"
+                            "redes redes"
+                            "footer footer";
+                            justify-content: center;
+
+    }
+    .estructuraDiseños{
+        height: 80vh;
+        display: grid;
+        grid-template-areas:"titulo titulo"
+                            "imagen1 imagen2"
+                            "imagen3 imagen4"
+                            "redes redes"
+                            "footer footer";
+                            justify-content: center;
+    }
+    .estructuraClientes{
+        height: 80vh;
+        display: grid;
+        grid-template-areas:"imagen1 imagen1"
+                            "imagen2 imagen2"
+                            "redes redes"
+                            "footer footer";
+                            justify-content: center;
+    }
+    .estructuraSomos{
+        height: 80vh;
+        display: grid;
+        grid-template-areas:"titulo titulo"
+                            "main main"
+                            "subT subT"
+                            "subT2 subT2"
+                            "imagen1 imagen2"
+                            "imagen3 imagen4"
+                            "redes redes"
+                            "footer footer";
+                            justify-content: center;
+    }
+    .estructuraContacto{
+        height: 80vh;
+        display: grid;
+        grid-template-areas:"main main"
+                            "footer footer";
+                            justify-content: center;
+    }
+    .oculto{
+        display: block;
+    }
+}    
+@media only screen and (min-width:1024px){
+    .estructuraIndex{
+        height: 80vh;
+        display: grid;
+        grid-template-areas: "titulo titulo titulo titulo"
+                            "main main main main"
+                            "subT subT subT subT"
+                            "subT2 subT2 subT2 subT2"
+                            "imagen1 imagen2 imagen3 imagen3"
+                            "imagen4 imagen4 imagen4 imagen4"
+                            "redes redes redes redes"
+                            "footer footer footer footer";
+                            justify-content: center;
+
+    }
+    .estructuraDiseños{
+        height: 80vh;
+        display: grid;
+        grid-template-areas:"titulo titulo"
+                            "imagen1 imagen2"
+                            "imagen3 imagen4"
+                            "redes redes"
+                            "footer footer";
+                            justify-content: center;
+    }
+    .estructuraClientes{
+        height: 80vh;
+        display: grid;
+        grid-template-areas:"imagen1 imagen1"
+                            "imagen2 imagen2"
+                            "redes redes"
+                            "footer footer";
+                            justify-content: center;
+    }
+    .estructuraSomos{
+        height: 80vh;
+        display: grid;
+        grid-template-areas:"titulo titulo titulo"
+                            "main main main"
+                            "subT subT subT"
+                            "subT2 subT2 subT2"
+                            "imagen1 imagen2 imagen3"
+                            "imagen4 imagen4 imagen4"
+                            "redes redes redes"
+                            "footer footer footer";
+                            justify-content: center;
+    }
+    .estructuraContacto{
+        height: 80vh;
+        display: grid;
+        grid-template-areas:"main main"
+                            "footer footer";
+                            justify-content: center;
+    }
+    .oculto{
+        display: block;
+    }
+    .oculto{
+        display: block;
+    }
+}
+
+
+
+
+
+
+
+
+    
+
+    
