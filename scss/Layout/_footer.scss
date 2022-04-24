@@ -1,0 +1,54 @@
+.footer{
+    border-top: 0.2rem solid black;
+    background-color: map-get($colores ,principal);
+    .titulos{
+        .titulos__footer{
+            font-size: 2.5rem;
+            font-family: 'Rubik Glitch', cursive;
+            text-align: center;
+
+        }
+        .divider{
+            text-align: center;
+            .divider__img{
+                height: 3.5rem;
+            }
+        }
+    }
+    .contenedor-social{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        .redes{
+            background-color: map-get($colores ,principal);
+            .redes__iconos{
+                display:flex;
+                color: aliceblue;
+                font-size: 1.5rem;
+                @include espacios (0.2rem, 1rem);
+                .redes__links{
+                    list-style: none;
+                    text-decoration: none;
+                    color: black;   
+                    
+                }
+            }
+        }
+    }
+    .footer__fin{
+        text-align: right;
+        color: white;
+    }
+}
+//estilos de cards bootstrap
+.card{
+    @include espacios (0.2rem, 1rem);
+    box-shadow: 10px 5px 5px black;
+}
+.card-img-top{
+    height: 18rem;
+}
+.btn-primary{
+    @extend .botones;
+}
+   

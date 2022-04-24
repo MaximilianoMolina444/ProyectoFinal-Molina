@@ -1,0 +1,38 @@
+.header{
+    background-color: map-get($colores , principal );
+    text-align: center;
+    border-bottom: 0.2rem solid black;
+    .header__link{
+        .header__logo{
+            width: 10rem;
+        }
+    }
+    .nav{
+        display: inline;
+        text-align: center;
+        .nav__lista{
+            background-color: map-get($colores ,principal);
+            display: flex;
+            justify-content: center;
+            @include espacios (0.5rem, 1rem);
+            .nav__links{
+                list-style: none;
+                border-radius: 0.5rem;
+                border: 0.2rem solid white;
+                background-color: black;
+                @include espacios (0.2rem, 0.5rem);
+                &:hover{
+                    background-color: map-get($colores , secundario );
+                }
+                
+                .nav__link{
+                    color: map-get($colores , textos); 
+                    text-decoration: none;
+                    &:hover{
+                        color: black;
+                    }
+                }
+            }
+        }
+    }   
+}

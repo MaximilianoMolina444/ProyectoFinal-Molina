@@ -1,0 +1,25 @@
+body{
+    background-color: map-get($colores ,secundario);
+    .main{
+        .titulos{
+            text-align: center;
+            @include espacios (1rem, 1rem);
+            .divider{
+                text-align: center;
+                .divider__img{
+                    width:22rem;
+                    @include espacios(0.5rem, 0.5rem);
+                }
+            }
+            .titulos__contenedor{
+                .titulos__texto--animado{
+                    font-family: 'Rubik Glitch', cursive;
+                    font-size: 2.5rem;
+                }
+                .titulos__texto{
+                    @extend .frase
+                }
+            }
+        }
+    }
+}
