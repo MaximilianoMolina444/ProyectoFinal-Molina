@@ -1,36 +1,38 @@
 .header{
     background-color: map-get($colores , principal );
-    text-align: center;
     border-bottom: 0.2rem solid black;
-    .header__link{
-        .header__logo{
-            width: 10rem;
-        }
-    }
+    position: sticky;
+    top: 0;
+    z-index: 1;
     .nav{
-        display: inline;
-        text-align: center;
-        .nav__lista{
-            background-color: map-get($colores ,principal);
+        .nav__estructura{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        }
+        .nav__logo{
             display: flex;
             justify-content: center;
-            @include espacios (0.5rem, 1rem);
-            .nav__links{
-                list-style: none;
-                border-radius: 0.5rem;
-                border: 0.2rem solid white;
-                background-color: black;
-                @include espacios (0.2rem, 0.5rem);
+            width: 8rem;
+            .nav__logo__img{
+                width: 5rem;
+            }
+        }
+        .nav__links{
+            display: flex;
+            .nav__link{
+                font-family: 'Bebas Neue', cursive;
+                font-size: 1.2rem;
+                padding: 0.5rem;
+                color: white;
+                text-decoration: none;
+                border-bottom: 0.2rem solid transparent;
+                transition: border .3s ease;
                 &:hover{
-                    background-color: map-get($colores , secundario );
-                }
-                
-                .nav__link{
-                    color: map-get($colores , textos); 
-                    text-decoration: none;
-                    &:hover{
-                        color: black;
-                    }
+                    border-bottom-color: black;
+                    transform: scale(1.1);
                 }
             }
         }

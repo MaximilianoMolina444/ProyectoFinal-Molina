@@ -5,12 +5,17 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Prendas personalizadas a tu gusto, no hay límite de talle ni de imaginación ¡Entrá Ahora y Conocé Todos Nuestros Trabajos! Diseños exclusivos. Venta Online a pedido.">
-  <meta name="keywords" content="HTML, CSS, SASS, SEO, New Arrivals, Ropa de Mujer, Ropa de Hombre, Todos los Talles, Talle Grande, Aesthetic, Ropa Custom, Personalizado, Indumentaria, Moda, A tu Medida">
+  <meta name="description"
+    content="Prendas personalizadas a tu gusto, no hay límite de talle ni de imaginación ¡Entrá Ahora y Conocé Todos Nuestros Trabajos! Diseños exclusivos. Venta Online a pedido.">
+  <meta name="keywords"
+    content="HTML, CSS, SASS, SEO, New Arrivals, Ropa de Mujer, Ropa de Hombre, Todos los Talles, Talle Grande, Aesthetic, Ropa Custom, Personalizado, Indumentaria, Moda, A tu Medida">
   <!-- link de la fuente -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
   <!-- link de bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
@@ -25,24 +30,18 @@
 
 <body>
   <header class="header">
-    <a href="index.html" class="header__link">
-      <img src="img/logo-modified.png" alt="" class="header__logo">
-    </a>
     <nav class="nav">
-      <ul class="nav__lista">
-        <li class="nav__links">
+      <div class="nav__estructura">
+        <div class="nav__logo">
+          <a href="index.html"><img src="img/logo-modified.png" class="nav__logo__img"></a>
+        </div>
+        <div class="nav__links">
           <a href="pages/diseños.html" class="nav__link">Diseños</a>
-        </li>
-        <li class="nav__links">
           <a href="pages/clientes.html" class="nav__link">Clientes</a>
-        </li>
-        <li class="nav__links">
           <a href="pages/somos.html" class="nav__link">Somos</a>
-        </li>
-        <li class="nav__links">
           <a href="pages/contacto.html" class="nav__link">Contacto</a>
-        </li>
-      </ul>
+        </div>
+      </div>
     </nav>
   </header>
   <main class="main">
@@ -124,9 +123,9 @@
               Modelos únicos
             </h3>
             <p class="card-text">
-              ¡Marcá tendencia con tu modelo exclusivo! Vos lo imaginas, nosotros lo hacemos.
+              ¡Marcá tendencia con tu modelo exclusivo! 100% original. Vos lo imaginas, nosotros lo hacemos.
             <p>
-              <a href="pages/diseños.html" class="btn btn-primary">Ver más</a>
+              <a href="pages/diseños.html" class="btn btn-primary mt-4">Ver más</a>
           </div>
         </div>
       </div>
@@ -155,25 +154,25 @@
         <img src="img/divider.png" alt="" class="divider__img">
       </div>
     </div>
-   <div class="contenedor-social">
+    <div class="contenedor-social">
       <div class="redes">
         <i class="redes__iconos bi bi-instagram">
-          <a href="https://www.instagram.com/ramona_custom/" class="redes__links">
+          <a href="https://www.instagram.com/ramona_custom/" target="_blank" class="redes__links">
             Instagram
           </a>
         </i>
         <i class="redes__iconos bi bi-tiktok">
-          <a href="https://www.tiktok.com/@ramona_custom" class="redes__links">
+          <a href="https://www.tiktok.com/@ramona_custom" target="_blank" class="redes__links">
             TikTok
           </a>
         </i>
         <i class="redes__iconos bi bi-whatsapp">
-          <a href="" class="redes__links">
+          <a href="" target="_blank" class="redes__links">
             whatsapp
           </a>
         </i>
         <i class="redes__iconos bi bi-telephone-outbound-fill">
-          <a href="" class="redes__links">
+          <a href="" target="_blank" class="redes__links">
             Teléfono
           </a>
         </i>
@@ -190,15 +189,14 @@
           <button type="submit" class="form__boton btn btn-primary">Enviar</button>
         </form>
       </div>
-   </div>
+    </div>
     </div>
     <p class="footer__fin">
-      ©2022 -  Hecho por Maximiliano Molina
+      ©2022 - Hecho por Maximiliano Molina
     </p>
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
-    </script>
+  </script>
 </body>
-
 </html>

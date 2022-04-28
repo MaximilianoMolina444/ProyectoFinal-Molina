@@ -1,0 +1,34 @@
+.main{
+    .formulario{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .formulario__estructura{
+            .formulario__titulo{
+                font-size: 3rem;
+                text-align: center;
+                .formulario__divider{
+                    width: 5rem;
+                }
+            }
+            .form{
+                text-align: center;
+                background-color: white;
+                border: 0.3rem solid black;
+                border-radius: 1rem;
+                @include espacios (0.2rem, 0.8rem);
+                .form__botones{
+                    .boton{
+                        @include boton-compra;
+                        &:hover{
+                            transform: scale(1.1);
+                            background-color:black;
+                            color:white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

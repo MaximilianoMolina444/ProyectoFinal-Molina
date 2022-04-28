@@ -1,0 +1,44 @@
+.main{
+    .contenedor{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        flex-wrap: wrap;
+        .contenedor__card{
+            @include cards;
+            box-shadow: 10px 5px 5px black;
+            .contenedor__titulo{
+                text-align: left;
+                font-size: 1rem;
+                margin-left: 1rem;
+                margin-top: 1rem;
+                font-weight: bold;
+                .contenedor__titulo__img{
+                    width:2.2rem;
+                };
+            }
+            .contenedor__imagen{
+                align-self: center;
+                width: 18rem;
+                padding: 0.2rem;
+                height: 17rem;
+                border-radius: 1rem;
+            }
+            .contenedor__descripcion{
+                text-align: center;
+            }
+            .contenedor__link{
+                text-align: center;
+                &:hover{
+                    transform: scale(1.2);
+                }
+                .botón{
+                    @include boton-compra;
+                    
+                }
+            }
+        }
+    }
+}   

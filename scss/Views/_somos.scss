@@ -1,0 +1,17 @@
+.main{
+    .main__titulo{
+        text-align: center;
+        .main__parrafo{
+            text-align: center;
+
+        }
+    }
+    .contenedor__video{
+        display: flex;
+        .videos{
+            justify-content: space-around;
+            margin-bottom: 2rem;
+            border-radius: 1rem;
+        }
+    }
+}

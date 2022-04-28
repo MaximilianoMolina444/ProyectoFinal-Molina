@@ -1,5 +1,6 @@
 body{
     background-color: map-get($colores ,secundario);
+    background-image: url(../../img/d1aa2aaabcad1f9a01a3ff4f0ae46288.jpg);
     .main{
         .titulos{
             text-align: center;
@@ -17,7 +18,8 @@ body{
                     font-size: 2.5rem;
                 }
                 .titulos__texto{
-                    @extend .frase
+                    @extend .frase;
+                    display: block;
                 }
             }
         }

@@ -1,0 +1,43 @@
+.section{
+    .titulos{
+        text-align: center;
+        @include espacios (1rem, 1rem);
+        .divider{
+            text-align: center;
+            .divider__img{
+                width:22rem;
+                @include espacios(0.5rem, 0.5rem);
+            }
+        }
+        .titulos__contenedor{
+            .titulos__texto{
+                @extend .frase;
+                
+                
+            }
+        }
+    }
+    .contenedor{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        flex-wrap: wrap;
+        .contenedor__card{
+            @include cards;
+            .contenedor__imagen{
+                align-self: center;
+                width: 18rem;
+                padding: 0.2rem;
+                height: 17rem;
+                border-radius: 1rem;
+            }
+            .contenedor__descripcion{
+                text-align: center;
+            }
+            
+        }
+    }
+}
+    

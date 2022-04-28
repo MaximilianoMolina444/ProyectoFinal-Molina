@@ -1,15 +1,19 @@
+@charset "UTF-8";
 /* media queries */
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box; }
 
-.frase, body .main .titulos .titulos__contenedor .titulos__texto {
+.frase, body .main .titulos .titulos__contenedor .titulos__texto, .section .titulos .titulos__contenedor .titulos__texto {
+  display: inline-block;
   background-color: #212121;
   color: #FFFFFF;
   text-align: center;
   font-size: 1.4rem;
-  border-radius: 1rem 3rem; }
+  border-radius: 1rem 3rem;
+  padding: 0.3rem 1rem;
+  font-family: 'Bebas Neue', cursive; }
 
 .botones, .btn-primary {
   color: #FFFFFF;
@@ -18,33 +22,35 @@
 
 .header {
   background-color: #9C27B0;
-  text-align: center;
-  border-bottom: 0.2rem solid black; }
-  .header .header__link .header__logo {
-    width: 10rem; }
-  .header .nav {
-    display: inline;
-    text-align: center; }
-    .header .nav .nav__lista {
-      background-color: #9C27B0;
-      display: flex;
-      justify-content: center;
+  border-bottom: 0.2rem solid black;
+  position: sticky;
+  top: 0;
+  z-index: 1; }
+  .header .nav .nav__estructura {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; }
+  .header .nav .nav__logo {
+    display: flex;
+    justify-content: center;
+    width: 8rem; }
+    .header .nav .nav__logo .nav__logo__img {
+      width: 5rem; }
+  .header .nav .nav__links {
+    display: flex; }
+    .header .nav .nav__links .nav__link {
+      font-family: 'Bebas Neue', cursive;
+      font-size: 1.2rem;
       padding: 0.5rem;
-      margin: 1rem; }
-      .header .nav .nav__lista .nav__links {
-        list-style: none;
-        border-radius: 0.5rem;
-        border: 0.2rem solid white;
-        background-color: black;
-        padding: 0.2rem;
-        margin: 0.5rem; }
-        .header .nav .nav__lista .nav__links:hover {
-          background-color: #9E9E9E; }
-        .header .nav .nav__lista .nav__links .nav__link {
-          color: #FFFFFF;
-          text-decoration: none; }
-          .header .nav .nav__lista .nav__links .nav__link:hover {
-            color: black; }
+      color: white;
+      text-decoration: none;
+      border-bottom: 0.2rem solid transparent;
+      transition: border .3s ease; }
+      .header .nav .nav__links .nav__link:hover {
+        border-bottom-color: black;
+        transform: scale(1.1); }
 
 .footer {
   border-top: 0.2rem solid black;
@@ -86,7 +92,8 @@
   height: 18rem; }
 
 body {
-  background-color: #9E9E9E; }
+  background-color: #9E9E9E;
+  background-image: url(../../img/d1aa2aaabcad1f9a01a3ff4f0ae46288.jpg); }
   body .main .titulos {
     text-align: center;
     padding: 1rem;
@@ -100,3 +107,123 @@ body {
     body .main .titulos .titulos__contenedor .titulos__texto--animado {
       font-family: 'Rubik Glitch', cursive;
       font-size: 2.5rem; }
+    body .main .titulos .titulos__contenedor .titulos__texto {
+      display: block; }
+
+.main .contenedor {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap; }
+  .main .contenedor .contenedor__card {
+    width: 20rem;
+    text-align: center;
+    background-color: white;
+    border-radius: 3px;
+    margin-bottom: 0.5rem;
+    box-shadow: 10px 5px 5px black; }
+    .main .contenedor .contenedor__card .contenedor__titulo {
+      text-align: left;
+      font-size: 1rem;
+      margin-left: 1rem;
+      margin-top: 1rem;
+      font-weight: bold; }
+      .main .contenedor .contenedor__card .contenedor__titulo .contenedor__titulo__img {
+        width: 2.2rem; }
+    .main .contenedor .contenedor__card .contenedor__imagen {
+      align-self: center;
+      width: 18rem;
+      padding: 0.2rem;
+      height: 17rem;
+      border-radius: 1rem; }
+    .main .contenedor .contenedor__card .contenedor__descripcion {
+      text-align: center; }
+    .main .contenedor .contenedor__card .contenedor__link {
+      text-align: center; }
+      .main .contenedor .contenedor__card .contenedor__link:hover {
+        transform: scale(1.2); }
+      .main .contenedor .contenedor__card .contenedor__link .botón {
+        background-color: #9C27B0;
+        color: #FFFFFF;
+        padding: 0.5rem;
+        border-radius: 1rem;
+        border: 1px solid black;
+        text-decoration: none;
+        box-shadow: 1px 1px 1px; }
+
+.section .titulos {
+  text-align: center;
+  padding: 1rem;
+  margin: 1rem; }
+  .section .titulos .divider {
+    text-align: center; }
+    .section .titulos .divider .divider__img {
+      width: 22rem;
+      padding: 0.5rem;
+      margin: 0.5rem; }
+
+.section .contenedor {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap; }
+  .section .contenedor .contenedor__card {
+    width: 20rem;
+    text-align: center;
+    background-color: white;
+    border-radius: 3px;
+    margin-bottom: 0.5rem; }
+    .section .contenedor .contenedor__card .contenedor__imagen {
+      align-self: center;
+      width: 18rem;
+      padding: 0.2rem;
+      height: 17rem;
+      border-radius: 1rem; }
+    .section .contenedor .contenedor__card .contenedor__descripcion {
+      text-align: center; }
+
+.main .main__titulo {
+  text-align: center; }
+  .main .main__titulo .main__parrafo {
+    text-align: center; }
+
+.main .contenedor__video {
+  display: flex; }
+  .main .contenedor__video .videos {
+    justify-content: space-around;
+    margin-bottom: 2rem;
+    border-radius: 1rem; }
+
+.main .formulario {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .main .formulario .formulario__estructura .formulario__titulo {
+    font-size: 3rem;
+    text-align: center; }
+    .main .formulario .formulario__estructura .formulario__titulo .formulario__divider {
+      width: 5rem; }
+  .main .formulario .formulario__estructura .form {
+    text-align: center;
+    background-color: white;
+    border: 0.3rem solid black;
+    border-radius: 1rem;
+    padding: 0.2rem;
+    margin: 0.8rem; }
+    .main .formulario .formulario__estructura .form .form__botones .boton {
+      background-color: #9C27B0;
+      color: #FFFFFF;
+      padding: 0.5rem;
+      border-radius: 1rem;
+      border: 1px solid black;
+      text-decoration: none;
+      box-shadow: 1px 1px 1px; }
+      .main .formulario .formulario__estructura .form .form__botones .boton:hover {
+        transform: scale(1.1);
+        background-color: black;
+        color: white; }

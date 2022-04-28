@@ -3,13 +3,32 @@
     padding: $padding;
     margin: $margin;
 }
+@mixin cards{
+    width: 20rem;
+    text-align: center;
+    background-color: white;
+    border-radius: 3px;
+    margin-bottom: 0.5rem;
+}
+@mixin boton-compra{
+    background-color: map-get($colores ,principal);
+    color: map-get($colores ,textos);
+    padding: 0.5rem;
+    border-radius: 1rem;
+    border: 1px solid black;
+    text-decoration: none;
+    box-shadow: 1px 1px 1px;
+}
 //extends
 .frase{
+    display: inline-block;
     background-color: map-get($colores , acento );
     color: #FFFFFF;
     text-align: center;
     font-size: 1.4rem;
     border-radius: 1rem 3rem;
+    padding: 0.3rem 1rem;
+    font-family: 'Bebas Neue', cursive;
 }
 .botones{
     color: $textos;
