@@ -1,5 +1,21 @@
 @charset "UTF-8";
 /* media queries */
+@media only screen and (min-width: 600px) {
+  .telefono__img {
+    width: 100px;
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    display: block !important; } }
+
+@media only screen and (min-width: 1024px) {
+  .telefono__img {
+    width: 100px;
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    display: block !important; } }
+
 * {
   padding: 0;
   margin: 0;
@@ -99,7 +115,7 @@
   height: 18rem; }
 
 body {
-  background-image: url(https://i.ibb.co/3c1yrcK/d1aa2aaabcad1f9a01a3ff4f0ae46288.jpg); }
+  background-image: url(https://i.ibb.co/3c1yrcK/d1aa2aaabcad1f9a01a3ff4f0ae46288.jpg) !important; }
   body .main .titulos {
     text-align: center;
     padding: 1rem;
@@ -117,6 +133,12 @@ body {
       display: block; }
   body .main .carrousel {
     z-index: 0; }
+  body section .telefono .telefono__img {
+    width: 5rem;
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    display: none; }
 
 .main .contenedor {
   width: 100%;
@@ -159,6 +181,13 @@ body {
         border: 1px solid black;
         text-decoration: none;
         box-shadow: 1px 1px 1px; }
+
+.main .telefono .telefono__img {
+  width: 5rem;
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  display: none; }
 
 .section .titulos {
   text-align: center;
@@ -205,11 +234,26 @@ body {
       padding-bottom: 1rem;
       border-radius: 0.5rem; }
 
+.telefono .telefono__img {
+  width: 5rem;
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  display: none; }
+
 .main .main__titulo {
   text-align: center; }
-  .main .main__titulo .main__parrafo {
-    text-align: center;
-    margin: 1rem; }
+
+.main .main__parrafo {
+  margin-left: 2rem;
+  margin-right: 2rem;
+  color: white;
+  background: rgba(19, 10, 10, 0.5);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18); }
 
 .main .contenedor__video {
   display: flex; }
@@ -217,6 +261,13 @@ body {
     justify-content: space-around;
     margin-bottom: 2rem;
     border-radius: 1rem; }
+
+.telefono .telefono__img {
+  width: 5rem;
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  display: none; }
 
 .main .formulario {
   width: 100%;

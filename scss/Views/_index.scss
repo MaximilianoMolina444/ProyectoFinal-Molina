@@ -1,5 +1,5 @@
 body{
-    background-image: url(https://i.ibb.co/3c1yrcK/d1aa2aaabcad1f9a01a3ff4f0ae46288.jpg);
+    background-image: url(https://i.ibb.co/3c1yrcK/d1aa2aaabcad1f9a01a3ff4f0ae46288.jpg) !important;
     .main{
         .titulos{
             text-align: center;
@@ -24,6 +24,17 @@ body{
         }
         .carrousel{
             z-index: 0;
+        }
+    }
+    section{
+        .telefono{
+            .telefono__img{
+                width: 5rem;
+                position: fixed;
+                bottom: 0px;
+                right: 0px;
+                display: none;
+            }
         }
     }
 }

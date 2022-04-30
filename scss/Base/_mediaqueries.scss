@@ -1,8 +1,21 @@
 
 /* media queries */
 @media only screen and (min-width:600px){
+    .telefono__img{
+        width: 100px;
+        position: fixed;
+        bottom: 0px;
+        right: 0px;
+        display: block !important;
+    }
     
 }    
 @media only screen and (min-width:1024px){
-    
+    .telefono__img{
+        width: 100px;
+        position: fixed;
+        bottom: 0px;
+        right: 0px;
+        display: block !important;
+    }
 }
