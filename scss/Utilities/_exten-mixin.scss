@@ -19,6 +19,12 @@
     text-decoration: none;
     box-shadow: 1px 1px 1px;
 }
+@mixin sombras{
+    border-radius: 10px;
+    background: linear-gradient(315deg, #f0f0f0, #cacaca);
+    box-shadow:  -9px -9px 18px #a1a1a1,
+                9px 9px 18px #ffffff;
+}
 //extends
 .frase{
     display: inline-block;
@@ -34,4 +40,9 @@
     color: $textos;
     background-color: $principal;
     border-color: $acento;
+}
+.card{
+    @include espacios (0.2rem, 1rem);
+    @include sombras;
+    
 }

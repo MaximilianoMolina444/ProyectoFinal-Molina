@@ -8,7 +8,6 @@
         flex-wrap: wrap;
         .contenedor__card{
             @include cards;
-            box-shadow: 10px 5px 5px black;
             .contenedor__titulo{
                 text-align: left;
                 font-size: 1rem;

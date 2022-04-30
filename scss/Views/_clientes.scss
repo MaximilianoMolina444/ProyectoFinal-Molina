@@ -26,17 +26,32 @@
         flex-wrap: wrap;
         .contenedor__card{
             @include cards;
+            border: 1px solid black;
             .contenedor__imagen{
                 align-self: center;
-                width: 18rem;
+                width: 15rem;
                 padding: 0.2rem;
-                height: 17rem;
+                height: 15rem;
                 border-radius: 1rem;
             }
             .contenedor__descripcion{
-                text-align: center;
+                text-align:justify;
+                margin: 1rem;
             }
-            
+            .contenedor__prenda{
+                .prenda{
+                    width: 90%;
+                    height: 26rem;
+                    padding-bottom: 1rem;
+                    border-radius: 1rem;
+                }
+                .prenda--abuelo{
+                    width: 90%;
+                    height: 24.5rem;
+                    padding-bottom: 1rem;
+                    border-radius: 0.5rem;
+                }
+            }
         }
     }
 }
