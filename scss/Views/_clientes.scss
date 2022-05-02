@@ -1,67 +1,68 @@
-.section{
-    .titulos{
-        text-align: center;
-        @include espacios (1rem, 1rem);
-        .divider{
+body{
+    .section{
+        .titulos{
             text-align: center;
-            .divider__img{
-                width:22rem;
-                @include espacios(0.5rem, 0.5rem);
+            @include espacios (1rem, 1rem);
+            .divider{
+                text-align: center;
+                .divider__img{
+                    width:22rem;
+                    @include espacios(0.5rem, 0.5rem);
+                }
+            }
+            .titulos__contenedor{
+                .titulos__texto{
+                    @extend .frase;
+                    
+                    
+                }
             }
         }
-        .titulos__contenedor{
-            .titulos__texto{
-                @extend .frase;
-                
-                
-            }
-        }
-    }
-    .contenedor{
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 1rem;
-        flex-wrap: wrap;
-        .contenedor__card{
-            @include cards;
-            border: 1px solid black;
-            .contenedor__imagen{
-                align-self: center;
-                width: 15rem;
-                padding: 0.2rem;
-                height: 15rem;
-                border-radius: 1rem;
-            }
-            .contenedor__descripcion{
-                text-align:justify;
-                margin: 1rem;
-            }
-            .contenedor__prenda{
-                .prenda{
-                    width: 90%;
-                    height: 26rem;
-                    padding-bottom: 1rem;
+        .contenedor{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+            .contenedor__card{
+                @include cards;
+                border: 1px solid black;
+                .contenedor__imagen{
+                    align-self: center;
+                    width: 15rem;
+                    padding: 0.2rem;
+                    height: 15rem;
                     border-radius: 1rem;
                 }
-                .prenda--abuelo{
-                    width: 90%;
-                    height: 24.5rem;
-                    padding-bottom: 1rem;
-                    border-radius: 0.5rem;
+                .contenedor__descripcion{
+                    text-align:justify;
+                    margin: 1rem;
+                }
+                .contenedor__prenda{
+                    .prenda{
+                        width: 90%;
+                        height: 26rem;
+                        padding-bottom: 1rem;
+                        border-radius: 1rem;
+                    }
+                    .prenda--abuelo{
+                        width: 90%;
+                        height: 24.5rem;
+                        padding-bottom: 1rem;
+                        border-radius: 0.5rem;
+                    }
                 }
             }
         }
     }
+    .telefono{
+        .telefono__img{
+            width: 5rem;
+            position: fixed;
+            bottom: 0px;
+            right: 0px;
+            display: none;
+        }
+    }    
 }
-.telefono{
-    .telefono__img{
-        width: 5rem;
-        position: fixed;
-        bottom: 0px;
-        right: 0px;
-        display: none;
-    }
-}
-    

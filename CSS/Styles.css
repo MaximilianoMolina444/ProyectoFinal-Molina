@@ -2,7 +2,7 @@
 /* media queries */
 @media only screen and (min-width: 600px) {
   .telefono__img {
-    width: 100px;
+    width: 5rem;
     z-index: 2;
     position: fixed;
     bottom: 0px;
@@ -11,7 +11,7 @@
 
 @media only screen and (min-width: 1024px) {
   .telefono__img {
-    width: 100px;
+    width: 5rem;
     z-index: 2;
     position: fixed;
     bottom: 0px;
@@ -23,7 +23,7 @@
   margin: 0;
   box-sizing: border-box; }
 
-.frase, body .main .titulos .titulos__contenedor .titulos__texto, .section .titulos .titulos__contenedor .titulos__texto {
+.frase, body .main .titulos .titulos__contenedor .titulos__texto, body .section .titulos .titulos__contenedor .titulos__texto {
   display: inline-block;
   background-color: #212121;
   color: #FFFFFF;
@@ -142,7 +142,7 @@ body {
     right: 0px;
     display: none; }
 
-.main .contenedor {
+body .main .contenedor {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -150,33 +150,33 @@ body {
   gap: 1rem;
   flex-wrap: wrap;
   margin-bottom: 1.5rem; }
-  .main .contenedor .contenedor__card {
+  body .main .contenedor .contenedor__card {
     width: 20rem;
     text-align: center;
     background-color: white;
     border-radius: 3px;
     margin-bottom: 0.5rem; }
-    .main .contenedor .contenedor__card .contenedor__titulo {
+    body .main .contenedor .contenedor__card .contenedor__titulo {
       text-align: left;
       font-size: 1rem;
       margin-left: 1rem;
       margin-top: 1rem;
       font-weight: bold; }
-      .main .contenedor .contenedor__card .contenedor__titulo .contenedor__titulo__img {
+      body .main .contenedor .contenedor__card .contenedor__titulo .contenedor__titulo__img {
         width: 2.2rem; }
-    .main .contenedor .contenedor__card .contenedor__imagen {
+    body .main .contenedor .contenedor__card .contenedor__imagen {
       align-self: center;
       width: 18rem;
       padding: 0.2rem;
       height: 17rem;
       border-radius: 1rem; }
-    .main .contenedor .contenedor__card .contenedor__descripcion {
+    body .main .contenedor .contenedor__card .contenedor__descripcion {
       text-align: center; }
-    .main .contenedor .contenedor__card .contenedor__link {
+    body .main .contenedor .contenedor__card .contenedor__link {
       text-align: center; }
-      .main .contenedor .contenedor__card .contenedor__link:hover {
+      body .main .contenedor .contenedor__card .contenedor__link:hover {
         transform: scale(1.2); }
-      .main .contenedor .contenedor__card .contenedor__link .botón {
+      body .main .contenedor .contenedor__card .contenedor__link .botón {
         background-color: #9C27B0;
         color: #FFFFFF;
         padding: 0.5rem;
@@ -184,72 +184,72 @@ body {
         border: 1px solid black;
         text-decoration: none;
         box-shadow: 1px 1px 1px; }
-        .main .contenedor .contenedor__card .contenedor__link .botón .bi {
+        body .main .contenedor .contenedor__card .contenedor__link .botón .bi {
           margin: 0.5rem; }
 
-.main .telefono .telefono__img {
+body .telefono .telefono__img {
   width: 5rem;
   position: fixed;
   bottom: 0px;
   right: 0px;
   display: none; }
 
-.section .titulos {
+body .section .titulos {
   text-align: center;
   padding: 1rem;
   margin: 1rem; }
-  .section .titulos .divider {
+  body .section .titulos .divider {
     text-align: center; }
-    .section .titulos .divider .divider__img {
+    body .section .titulos .divider .divider__img {
       width: 22rem;
       padding: 0.5rem;
       margin: 0.5rem; }
 
-.section .contenedor {
+body .section .contenedor {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 1rem;
   flex-wrap: wrap; }
-  .section .contenedor .contenedor__card {
+  body .section .contenedor .contenedor__card {
     width: 20rem;
     text-align: center;
     background-color: white;
     border-radius: 3px;
     margin-bottom: 0.5rem;
     border: 1px solid black; }
-    .section .contenedor .contenedor__card .contenedor__imagen {
+    body .section .contenedor .contenedor__card .contenedor__imagen {
       align-self: center;
       width: 15rem;
       padding: 0.2rem;
       height: 15rem;
       border-radius: 1rem; }
-    .section .contenedor .contenedor__card .contenedor__descripcion {
+    body .section .contenedor .contenedor__card .contenedor__descripcion {
       text-align: justify;
       margin: 1rem; }
-    .section .contenedor .contenedor__card .contenedor__prenda .prenda {
+    body .section .contenedor .contenedor__card .contenedor__prenda .prenda {
       width: 90%;
       height: 26rem;
       padding-bottom: 1rem;
       border-radius: 1rem; }
-    .section .contenedor .contenedor__card .contenedor__prenda .prenda--abuelo {
+    body .section .contenedor .contenedor__card .contenedor__prenda .prenda--abuelo {
       width: 90%;
       height: 24.5rem;
       padding-bottom: 1rem;
       border-radius: 0.5rem; }
 
-.telefono .telefono__img {
+body .telefono .telefono__img {
   width: 5rem;
   position: fixed;
   bottom: 0px;
   right: 0px;
   display: none; }
 
-.main .main__titulo {
+body .main .main__titulo {
   text-align: center; }
 
-.main .main__parrafo {
+body .main .main__parrafo {
   margin-left: 2rem;
   margin-right: 2rem;
   padding: 0.5rem;
@@ -261,14 +261,14 @@ body {
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18); }
 
-.main .contenedor__video {
+body .main .contenedor__video {
   display: flex; }
-  .main .contenedor__video .videos {
+  body .main .contenedor__video .videos {
     justify-content: space-around;
     margin-bottom: 2rem;
     border-radius: 1rem; }
 
-.telefono .telefono__img {
+body .telefono .telefono__img {
   width: 5rem;
   position: fixed;
   bottom: 0px;
