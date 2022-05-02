@@ -135,7 +135,7 @@ body {
       display: block; }
   body .main .carrousel {
     z-index: 0; }
-  body section .telefono .telefono__img {
+  body .telefono .telefono__img {
     width: 5rem;
     position: fixed;
     bottom: 0px;
