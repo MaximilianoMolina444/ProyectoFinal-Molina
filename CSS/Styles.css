@@ -3,6 +3,7 @@
 @media only screen and (min-width: 600px) {
   .telefono__img {
     width: 100px;
+    z-index: 2;
     position: fixed;
     bottom: 0px;
     right: 0px;
@@ -11,6 +12,7 @@
 @media only screen and (min-width: 1024px) {
   .telefono__img {
     width: 100px;
+    z-index: 2;
     position: fixed;
     bottom: 0px;
     right: 0px;
@@ -146,7 +148,8 @@ body {
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem; }
   .main .contenedor .contenedor__card {
     width: 20rem;
     text-align: center;
@@ -181,6 +184,8 @@ body {
         border: 1px solid black;
         text-decoration: none;
         box-shadow: 1px 1px 1px; }
+        .main .contenedor .contenedor__card .contenedor__link .botón .bi {
+          margin: 0.5rem; }
 
 .main .telefono .telefono__img {
   width: 5rem;
@@ -247,6 +252,7 @@ body {
 .main .main__parrafo {
   margin-left: 2rem;
   margin-right: 2rem;
+  padding: 0.5rem;
   color: white;
   background: rgba(19, 10, 10, 0.5);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);

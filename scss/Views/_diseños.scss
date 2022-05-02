@@ -6,6 +6,7 @@
         align-items: center;
         gap: 1rem;
         flex-wrap: wrap;
+        margin-bottom: 1.5rem;
         .contenedor__card{
             @include cards;
             .contenedor__titulo{
@@ -35,7 +36,9 @@
                 }
                 .botón{
                     @include boton-compra;
-                    
+                    .bi{
+                        margin: 0.5rem;
+                    }
                 }
             }
         }
