@@ -7,7 +7,9 @@
     position: fixed;
     bottom: 0px;
     right: 0px;
-    display: block !important; } }
+    display: block !important; }
+  .footer .titulos .titulos__footer {
+    font-size: 2rem !important; } }
 
 @media only screen and (min-width: 1024px) {
   .telefono__img {
@@ -16,7 +18,9 @@
     position: fixed;
     bottom: 0px;
     right: 0px;
-    display: block !important; } }
+    display: block !important; }
+  .footer .titulos .titulos__footer {
+    font-size: 2.5rem !important; } }
 
 * {
   padding: 0;
@@ -86,7 +90,7 @@
   border-top: 0.2rem solid black;
   background-color: #9C27B0; }
   .footer .titulos .titulos__footer {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     font-family: 'Rubik Glitch', cursive;
     text-align: center; }
   .footer .titulos .divider {
