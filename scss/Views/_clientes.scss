@@ -36,10 +36,14 @@ body{
                     border-radius: 1rem;
                 }
                 .contenedor__descripcion{
+                    font-family: 'Roboto Slab', serif;
+                    font-style: bold;
                     text-align:justify;
                     margin: 1rem;
                 }
                 .contenedor__prenda{
+                    padding-bottom: 1.1rem;
+                    padding-top: 0.5rem;
                     .prenda{
                         width: 90%;
                         height: 26rem;
@@ -50,8 +54,21 @@ body{
                         width: 90%;
                         height: 24.5rem;
                         padding-bottom: 1rem;
+                        padding-top: 1.3rem;
                         border-radius: 0.5rem;
                     }
+                }
+                .contenedor__prenda--maggie{
+                    
+                    .prenda{
+                        width: 90%;
+                        height: 26rem;
+                        padding-bottom: 1rem;
+                        border-radius: 1rem;
+                        padding-top: 1.7rem;
+                        padding-bottom: 1rem;
+                    }
+                    
                 }
             }
         }

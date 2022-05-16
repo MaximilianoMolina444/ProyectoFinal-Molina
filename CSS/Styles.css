@@ -230,18 +230,31 @@ body .section .contenedor {
       height: 15rem;
       border-radius: 1rem; }
     body .section .contenedor .contenedor__card .contenedor__descripcion {
+      font-family: 'Roboto Slab', serif;
+      font-style: bold;
       text-align: justify;
       margin: 1rem; }
-    body .section .contenedor .contenedor__card .contenedor__prenda .prenda {
+    body .section .contenedor .contenedor__card .contenedor__prenda {
+      padding-bottom: 1.1rem;
+      padding-top: 0.5rem; }
+      body .section .contenedor .contenedor__card .contenedor__prenda .prenda {
+        width: 90%;
+        height: 26rem;
+        padding-bottom: 1rem;
+        border-radius: 1rem; }
+      body .section .contenedor .contenedor__card .contenedor__prenda .prenda--abuelo {
+        width: 90%;
+        height: 24.5rem;
+        padding-bottom: 1rem;
+        padding-top: 1.3rem;
+        border-radius: 0.5rem; }
+    body .section .contenedor .contenedor__card .contenedor__prenda--maggie .prenda {
       width: 90%;
       height: 26rem;
       padding-bottom: 1rem;
-      border-radius: 1rem; }
-    body .section .contenedor .contenedor__card .contenedor__prenda .prenda--abuelo {
-      width: 90%;
-      height: 24.5rem;
-      padding-bottom: 1rem;
-      border-radius: 0.5rem; }
+      border-radius: 1rem;
+      padding-top: 1.7rem;
+      padding-bottom: 1rem; }
 
 body .telefono .telefono__img {
   width: 5rem;
@@ -251,9 +264,12 @@ body .telefono .telefono__img {
   display: none; }
 
 body .main .main__titulo {
+  font-family: 'Roboto Slab', serif;
   text-align: center; }
 
 body .main .main__parrafo {
+  font-family: 'Roboto Slab', serif;
+  font-size: 1.3rem;
   margin-left: 2rem;
   margin-right: 2rem;
   padding: 0.5rem;
@@ -290,6 +306,8 @@ body .telefono .telefono__img {
     .main .formulario .formulario__estructura .formulario__titulo .formulario__divider {
       width: 5rem; }
   .main .formulario .formulario__estructura .form {
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.2rem;
     text-align: center;
     background-color: white;
     border: 0.3rem solid black;
