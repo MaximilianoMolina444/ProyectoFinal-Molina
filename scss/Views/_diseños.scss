@@ -35,7 +35,7 @@ body{
                     &:hover{
                         transform: scale(1.2);
                     }
-                    .botón{
+                    .boton{
                         @include boton-compra;
                         .bi{
                             margin: 0.5rem;
