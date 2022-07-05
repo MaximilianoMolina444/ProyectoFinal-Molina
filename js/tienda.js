@@ -1,6 +1,6 @@
 let productos = [
     {
-        id: "1",   
+        id: "1",
         nombre: "Remeras de bandas: Queen",
         imagen: "https://i.ibb.co/sm0nB9s/Sin-t-tulo2.jpg",
         precio: 2500
@@ -56,28 +56,26 @@ let productos = [
 ];
 
 let carrito;
-if (JSON.parse(localStorage.getItem(`carrito`))) {
-    carrito = JSON.parse(localStorage.getItem(`carrito`))
-}else{
-    localStorage.setItem(`carrito`, JSON.stringify([]))
-    carrito = JSON.parse(localStorage.getItem(`carrito`))
-}
+JSON.parse(localStorage.getItem(`carrito`)) ? carrito = JSON.parse(localStorage.getItem(`carrito`)) : localStorage.setItem(`carrito`, JSON.stringify([])); carrito = JSON.parse(localStorage.getItem(`carrito`));
 
-for (let i = 0; i < productos.length; i++) {
-    const producto = productos[i];
+for (const producto of productos) {
+    const {id, imagen} = producto
+    let precio = producto.precio
+    let iva = 1.21
+    precio = precio*iva
     let card = `
     <div class="contenedor__card">
         <p class="contenedor__titulo">
             <img src="../img/logo-modified.png" alt="logo mini" class="contenedor__titulo__img">
             Ramona_Custom
         </p>
-        <img src=${producto.imagen} alt="Remera Queen" class="contenedor__imagen">
+        <img src=${imagen} alt="Remera Queen" class="contenedor__imagen">
         <p class="contenedor__texto">
-            <i class="texto">Precio: $${producto.precio}</i>
+            <i class="texto">Precio: $${precio}</i>
         </p>
         <hr>
         <p class="contenedor__link">
-            <button class="boton" id=${producto.id}>
+            <button class="boton" id=${id}>
                 <i class="bi bi-bag-plus-fill"></i>Pedi la tuya
             </button>
         </p>
@@ -86,12 +84,11 @@ for (let i = 0; i < productos.length; i++) {
     const contenedor = document.getElementById(`container`);
     contenedor.innerHTML += card;
 }
-
 let botonesAniadirCarrito = document.getElementsByClassName(`boton`);
 
-for (let i = 0; i < botonesAniadirCarrito.length; i++) {
-    const element = botonesAniadirCarrito[i];
-    element.addEventListener('click', aniadirCarritoClick)
+
+for(const boton of botonesAniadirCarrito){
+    boton.addEventListener('click', aniadirCarritoClick)
 }
 
 
@@ -104,18 +101,11 @@ function aniadirCarritoClick(e) {
     const btn = e.target;
     let idBoton = btn.getAttribute('id');
     let prodEncontrado = productos.filter(prod => prod.id == idBoton);
-    //------------------------------------------
     let guardarCarrito = productos.find(prod => prod.id == idBoton)
     const enCarrito = carrito.find(prod => prod.id == guardarCarrito.id)
-    if(!enCarrito) {
-        carrito.push({...prodEncontrado, cantidad: 1})
-    } else {
-        let carritoFiltrado = carrito.filter(prod => prod.id != enCarrito.id)
-        carrito = [...carritoFiltrado, {...enCarrito, cantidad: enCarrito.cantidad + 1}]
-    }
-    console.log(carrito)
+    let carritoFiltrado = carrito.filter(prod => prod.id != enCarrito.id)
+    !enCarrito? carrito.push({ ...prodEncontrado, cantidad: 1 }) : carrito = [...carritoFiltrado, { ...enCarrito, cantidad: enCarrito.cantidad + 1 }];
     localStorage.setItem('carrito', JSON.stringify(carrito))
-    //-------------------------------------------------------
     aniadirProductos(prodEncontrado[0].precio, prodEncontrado[0].imagen);
     alerta()
 }
@@ -157,14 +147,12 @@ function updateShoppingCartTotal() {
     const shoppingCartItems = document.querySelectorAll('.shoppingCartItem')
 
     shoppingCartItems.forEach(shoppingCartItem => {
+        let iva = 1.21
         const shoppingCartItemPriceElement = shoppingCartItem.querySelector(`.shoppingCartItemPrice`);
-
         const shoppingCartItemPrice = Number(shoppingCartItemPriceElement.textContent.replace(`$`, ""));
-        const shoppingCartItemQuantityElement =  shoppingCartItem.querySelector(`.shoppingCartItemQuantity`);
-        const shoppingCartItemQuantity = Number(shoppingCartItemQuantityElement.value)
-        console.log(shoppingCartItemQuantity);
+        const shoppingCartItemQuantityElement = shoppingCartItem.querySelector(`.shoppingCartItemQuantity`);
+        const shoppingCartItemQuantity = Number(shoppingCartItemQuantityElement.value)*iva
         total = total + shoppingCartItemPrice * shoppingCartItemQuantity
-        console.log(total);
     })
     shoppingCartTotal.innerHTML = `
         $${total}
