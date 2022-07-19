@@ -71,7 +71,7 @@ function alerta(){
     Swal.fire({
         position: 'center',
         icon: 'success',
-        title: 'Producto añadido, consultar carrito al final de la página',
+        title: 'Producto añadido, consultar carrito al final de la página.',
         showConfirmButton: false,
         timer: 2500
     })
@@ -80,19 +80,25 @@ function alerta(){
 function aniadirCarritoClick(e) {
     let iva = 1.21
     fetch('../js/productos.json')
-    .then((res)=>res.json())
+    .then((res)=> res.json())
     .then((data)=>{
-        
         const btn = e.target;
-        let idBoton = btn.getAttribute('id');
-        let prodEncontrado = data.filter(prod => prod.id == idBoton);
-        let guardarCarrito = data.find(prod => prod.id == idBoton)
-        const enCarrito = carrito.find(prod => prod.id == guardarCarrito.id)
-        let carritoFiltrado = carrito.filter(prod => prod.id != enCarrito.id)
-        !enCarrito? carrito.push({ ...prodEncontrado, cantidad: 1 }) : carrito = [...carritoFiltrado, { ...enCarrito, cantidad: enCarrito.cantidad + 1 }];
+        const idBoton = btn.getAttribute('id')
+        const prodEncontrado = data.filter(prod => prod.id == idBoton)
+        const prodEncontrado1 = data.find(prod => prod.id == idBoton)
+        const enCarrito = carrito.find(prod => prod.id == prodEncontrado1.id)
+        if(!enCarrito) {
+            carrito.push({...prodEncontrado1, cantidad: 1})
+        } else {
+            let carritoFiltrado = carrito.filter(prod => prod.id != enCarrito.id)
+            carrito = [...carritoFiltrado, {...enCarrito, cantidad: enCarrito.cantidad + 1}]
+        }
         localStorage.setItem('carrito', JSON.stringify(carrito))
         aniadirProductos(prodEncontrado[0].precio*iva, prodEncontrado[0].imagen, prodEncontrado[0].nombre),
         alerta()
+    })
+    .catch(() =>{
+        console.log("Error del sistema");
     })
     
 }
@@ -193,8 +199,8 @@ function alertaDeCompra(){
             icon: 'success',
             text: "pedido numero:" +""+ numeroRandom(1,100),
             input: 'number',
-            inputPlaceholder: 'Número de teléfono',
-            footer: 'Pronto nos pondremos en contacto, gracias por tu compra'
+            inputPlaceholder: ' Ingresa tu número de teléfono',
+            footer: 'Pronto nos pondremos en contacto, gracias por tu compra.'
           })
             
         }
